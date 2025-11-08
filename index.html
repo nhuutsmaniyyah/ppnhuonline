@@ -68,23 +68,38 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative text-white py-20 min-h-screen flex items-center" style="background-image: url('https://images.unsplash.com/photo-1564769625905-50e93615e769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="fade-in">
-                <h2 class="text-5xl font-bold mb-6 drop-shadow-lg">Selamat Datang di Pondok Pesantren Nurul Huda Utsmaniyyah</h2>
-                <p class="text-xl mb-8 max-w-3xl mx-auto drop-shadow-md">Membentuk generasi muslim yang berakhlak mulia, berilmu, dan berwawasan global dengan tetap berpegang teguh pada ajaran ahlu sunnah wal jam'ah</p>
-                <div class="space-x-4">
-                    <button onclick="scrollToSection('tentang')" class="bg-white text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
-                        Pelajari Lebih Lanjut
-                    </button>
-                    <button onclick="scrollToSection('kontak')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-800 transition-colors shadow-lg">
-                        Hubungi Kami
-                    </button>
-                </div>
+<section id="beranda" class="relative text-white py-20 min-h-screen flex items-center overflow-hidden">
+    <!-- Gambar Background -->
+    <img src="ppnhu.jpg" 
+         alt="Pondok Pesantren" 
+         class="absolute inset-0 w-full h-full object-cover z-0">
+         
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+    <!-- Konten Hero -->
+    <div class="container mx-auto px-6 text-center relative z-20">
+        <div class="fade-in">
+            <h2 class="text-5xl font-bold mb-6 drop-shadow-lg">
+                Selamat Datang di Pondok Pesantren Nurul Huda Utsmaniyyah
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto drop-shadow-md">
+                Membentuk generasi muslim yang berakhlak mulia, berilmu, dan berwawasan global dengan tetap berpegang teguh pada ajaran ahlu sunnah wal jam'ah
+            </p>
+            <div class="space-x-4">
+                <button onclick="scrollToSection('tentang')" 
+                        class="bg-white text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                    Pelajari Lebih Lanjut
+                </button>
+                <button onclick="scrollToSection('kontak')" 
+                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-800 transition-colors shadow-lg">
+                    Hubungi Kami
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Tentang Section -->
     <section id="tentang" class="py-16 bg-white">
@@ -409,6 +424,7 @@ Daftar Sekarang
 
 
  
+
 
 
 
